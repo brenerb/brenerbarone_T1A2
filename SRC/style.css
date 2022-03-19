@@ -1,0 +1,205 @@
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --clr-text: #2f4558;
+  --clr-box: #5f85a5;
+}
+
+html {
+  font-family: "Helvetica", serif;
+  color: var(--clr-text);
+  font-size: 1.125rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+.hero-image {
+  background-color: var(--clr-text);
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  background: url(/Docs/Images/Mac_2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  text-align: center;
+  color: #f1f1f1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px black;
+}
+
+.hire {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 20%;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hire:hover {
+  background-color: #2f4558;
+  color: white;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navigation Styles */
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: var(--clr-text);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--clr-box);
+  text-decoration: underline;
+}
+
+/* Homepage Styles */
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.button {
+  background-color: white;
+  color: #2f4558;
+  border: 2px solid #2f4558;
+  width: 10%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover {
+  background-color: #2f4558;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  color: #f1f1f1;
+}
+
+footer {
+  background-color: #2f4558;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (min-width: 750px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  p {
+    text-align: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .button {
+    background-color: white;
+    color: #2f4558;
+    border: 2px solid #2f4558;
+    width: 50%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hire {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    width: 60%;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
